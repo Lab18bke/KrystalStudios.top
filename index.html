@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>KrystalStudios | Elite Development Studio</title>
+    <meta name="description"
+        content="Premium Discord bots, Minecraft plugins, websites, and server infrastructure. Led by @lab18bke.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <nav class="nav">
+            <div class="nav-container">
+                <a href="#" class="nav-logo">
+                    <img src="logo.png" alt="KrystalStudios" class="logo-img">
+                </a>
+                <div class="nav-links">
+                    <a href="https://discord.gg/J3FmkPyhuA" class="nav-cta" target="_blank">
+                        <i class="fab fa-discord"></i>
+                        <span>Discord</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <div class="hero-section">
+                <p class="hero-tag">@lab18bke</p>
+                <h1 class="hero-title">Premium development.<br><span class="accent">Without premium prices.</span></h1>
+                <div class="service-indicator">
+                    <div class="indicator-dots">
+                        <button class="dot active" data-index="0"></button>
+                        <button class="dot" data-index="1"></button>
+                        <button class="dot" data-index="2"></button>
+                        <button class="dot" data-index="3"></button>
+                        <button class="dot" data-index="4"></button>
+                        <button class="dot" data-index="5"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-showcase">
+                <div class="service-cards-container">
+                    <div class="service-card active" data-index="0">
+                        <div class="service-icon">
+                            <i class="fab fa-discord"></i>
+                        </div>
+                        <h3>Discord Bots</h3>
+                        <p>Moderation, economy, tickets, automation.</p>
+                    </div>
+                    <div class="service-card" data-index="1">
+                        <div class="service-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>Web Development</h3>
+                        <p>Portfolios, dashboards, landing pages.</p>
+                    </div>
+                    <div class="service-card" data-index="2">
+                        <div class="service-icon">
+                            <i class="fas fa-cube"></i>
+                        </div>
+                        <h3>Minecraft Plugins</h3>
+                        <p>Spigot, Paper, custom mechanics.</p>
+                    </div>
+                    <div class="service-card" data-index="3">
+                        <div class="service-icon">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <h3>Mods & Datapacks</h3>
+                        <p>Forge, Fabric, vanilla+ experiences.</p>
+                    </div>
+                    <div class="service-card" data-index="4">
+                        <div class="service-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>System Admin</h3>
+                        <p>Server setup, security, maintenance.</p>
+                    </div>
+                    <div class="service-card" data-index="5">
+                        <div class="service-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3>Full Infrastructure</h3>
+                        <p>Complete server packages.</p>
+                    </div>
+                </div>
+                <div class="service-nav">
+                    <button class="service-nav-btn prev" aria-label="Previous service">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="service-nav-btn next" aria-label="Next service">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <a href="https://discord.gg/J3FmkPyhuA" class="cta-btn" target="_blank">
+                <i class="fab fa-discord"></i>
+                <span>Start a Project</span>
+            </a>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2026 KrystalStudios</p>
+            <button class="terminal-toggle" id="terminalToggle" aria-label="Open Terminal">
+                <i class="fas fa-terminal"></i>
+            </button>
+        </footer>
+    </div>
+
+    <div class="bg-effects">
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+    </div>
+
+    <div class="terminal-overlay" id="terminalOverlay">
+        <div class="terminal-container">
+            <div class="terminal-header">
+                <div class="terminal-title">
+                    <i class="fas fa-terminal"></i>
+                    <span>KrystalTerminal</span>
+                </div>
+                <button class="terminal-close" id="terminalClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="terminal-body" id="terminalBody">
+                <div class="terminal-welcome">
+                    <p>KrystalStudios Terminal v1.0</p>
+                </div>
+                <div class="terminal-output" id="terminalOutput"></div>
+            </div>
+            <div class="terminal-input-container">
+                <span class="terminal-prompt">$</span>
+                <input type="text" class="terminal-input" id="terminalInput" placeholder="Enter command..."
+                    autocomplete="off" spellcheck="false">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
