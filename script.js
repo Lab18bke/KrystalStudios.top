@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             'discord': () => {
                 addOutput('Opening Discord...', 'success');
-                window.open('https://discord.gg/krystal', '_blank');
+                window.open('https://discord.gg/ehCPqYygFb', '_blank');
             },
             'services': () => {
                 addOutput('Our Services:', 'success');
